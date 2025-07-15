@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-update-api
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHANNEL_ID
+        sync: false
